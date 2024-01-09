@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font-family: 62.5%;
+}
+body {
+  font-family: "Montserrat";
+  background-color: #eeeeee5b;
+}
+
+.container {
+  width: 80rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.grid-2c-3r {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+/* ---------------------INDEX-start------------------------- */
+/* header */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.co_logo {
+  width: 7rem;
+  text-decoration: none;
+  font-weight: 900;
+  color: #000;
+}
+.co_logo img {
+  width: 80%;
+}
+.menu_list {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu_list a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+}
+
+.menu_list a:hover {
+  text-decoration: none;
+
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.login_btn {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  display: inline-block;
+  border: 2px solid #222;
+  padding: 0.7rem;
+  border-radius: 20rem;
+  width: 10rem;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+/* help icon */
+.help-icon-img {
+  background-color: #000;
+  padding: 0.7rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+ion-icon {
+  color: #fff;
+}
+/* hero */
+.hero-section {
+  display: flex;
+}
+.hero-cont-1 {
+  width: 60%;
+}
+.hero_img {
+  width: 100%;
+}
+
+.hero-heading {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+article a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 2rem;
+}
+.know_btn {
+  display: inline-block;
+  border: 2px solid #222;
+  padding: 0.7rem;
+  border-radius: 20rem;
+  width: 10rem;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+.login_btn_inv {
+  display: inline-block;
+  border: 2px solid #000;
+  padding: 0.7rem;
+  border-radius: 20rem;
+  width: 10rem;
+
+  color: #000;
+  text-align: center;
+}
+/* about section */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+.about-section h3 {
+  padding: 1rem;
+}
+.about-section h2 {
+  grid-column-start: 1;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.about-section p {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  padding: 2rem;
+  line-height: 1.6rem;
+}
+.about-card-grp {
+  display: flex;
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 3rem;
+}
+.about-card {
+  width: 30%;
+  padding: 1.5rem;
+  box-shadow: 0 0 1px 1px #ddd;
+}
+
+.about-card ion-icon {
+  color: #000;
+  padding: 0.5rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.about-card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.about-card p {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.card_btn {
+  display: inline-block;
+  border: 2px solid #222;
+  padding: 0.7rem;
+
+  width: 10rem;
+
+  color: #222;
+  text-align: center;
+}
+/* subscribe section */
+.subscribe-section {
+  width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0 0 2px 2px #ddd;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.subscribe-section h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+}
+
+.subscribe_input {
+  display: flex;
+  justify-content: center;
+}
+.subscribe-section input {
+  width: 50%;
+  font-size: 1rem;
+  padding: 1.5rem;
+}
+
+.subscribe_search_btn {
+  padding: 1.5rem;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat";
+}
+
+/* footer */
+.foot-cont {
+  background-color: #000;
+  color: #fff;
+}
+.foot-in-cont-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.foot-use-link h4 {
+  margin-bottom: 1rem;
+}
+.use-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.use-link-list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.foot-services h4 {
+  margin-bottom: 1rem;
+}
+.services-list {
+  list-style: square;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.services-list a {
+  text-decoration: none;
+  color: #fff;
+}
+.foot-contact h4 {
+  margin-bottom: 1rem;
+}
+.foot-contact address {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.foot-contact p {
+  margin-bottom: 1rem;
+}
+
+.foot-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.foot-in-cont-2 {
+  margin-bottom: 1rem;
+}
+.soc-media-link {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.soc-media-link ion-icon {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.soc-media-link ion-icon:hover {
+  color: #aaa;
+  border: 1px solid #aaa;
+  transform: scale(1.15);
+}
+
+.foot-in-cont-3 {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* --------------------------------INDEX-end--------------------------------- */
+
+/* --------------------------------ABOUT start-------------------------------- */
+
+.main-about-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.our-story img,
+.our-phil img {
+  width: 90%;
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.our-story p,
+.our-phil p {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  align-self: self-start;
+  font-size: 1.2rem;
+}
+
+.our-mission p {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  align-self: self-start;
+  font-size: 1.2rem;
+}
+
+.our-mission img {
+  width: 100%;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+/* --------------------------------ABOUT end-------------------------------- */
+
+/* -------------------------------WHATWEDO start----------------------------------- */
+.whatwedo-cont {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+.logo-cont {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+
+  gap: 3rem;
+}
+
+.logo-sub-cont img {
+  width: 100%;
+  height: 3.7rem;
+}
+
+.text-cont h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.text-cont p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+/* -------------------------------WHATWEDO end----------------------------------- */
+/* ----------------------------contactus start------------------------- */
+
+.con_us h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.con_us-cont {
+  display: flex;
+  gap: 3rem;
+}
+.con_us-cont-det {
+  width: 50%;
+}
+.con_us-cont-form {
+  border: 1px solid #eeeeee5b;
+  padding: 2rem;
+  box-shadow: 0 0 15px 5px #ddd;
+  text-align: center;
+}
+
+.con_us-input {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #bbb;
+}
+.con_us-cont-form-sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr, 1fr;
+  margin-bottom: 1rem;
+}
+.con_us-input::placeholder {
+  font-family: sans-serif;
+  color: #999;
+}
+.con_us-input-mes,
+.con_us-input-sub {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.con_us-submit-btn {
+  border: 1px solid #000;
+  padding: 0.7rem;
+
+  background-color: #000;
+  color: #eee;
+  font-family: sans-serif;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+
+.con_us-cont-det {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid #eeeeee5b;
+  padding: 2rem;
+  box-shadow: 0 0 15px 5px #ddd;
+  text-align: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.con_us-cont-det-1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.con_us-cont-det ion-icon {
+  color: #222;
+  font-size: 3.5rem;
+}
+.con_us-cont-det-1,
+.con_us-cont-det-2,
+.con_us-cont-det-3 {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #bbb;
+  padding: 1.5rem;
+}
+/* ----------------------------contactus end------------------------- */
